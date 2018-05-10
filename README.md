@@ -1,4 +1,4 @@
-# vectorq-data
+# victa-data
 
 This small Flask app will provide a place to upload and retrieve collected
 cosmic ray data.
@@ -6,7 +6,7 @@ cosmic ray data.
 ## Config Options
 
 There is a config file that needs to be set with the environment variable
-__VECTORQ\_SETTINGS__. This config file only has two available options:
+__VICTA\_SETTINGS__. This config file only has two available options:
 
 * DATA_DIR = "/path/to/data"
 
@@ -33,10 +33,10 @@ directory as this repo). You can consult the official Flask [documentation](http
 on how to get started, but below are the steps you should need to follow:
 
 ```bash
-[~/vectorq-data]$ export FLASK_APP=vectorq-data.py
-[~/vectorq-data]$ export VECTORQ_SETTINGS=vectorq-data.conf
-[~/vectorq-data]$ flask-3 run
- * Serving Flask app "vectorq-data"
+[~/victa-data]$ export FLASK_APP=victa-data.py
+[~/victa-data]$ export VICTA_SETTINGS=victa-data.conf
+[~/victa-data]$ flask-3 run
+ * Serving Flask app "victa-data"
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
@@ -45,7 +45,7 @@ You can access that URL (http://127.0.0.1:5000/) in your web browser to
 access the app, though you won't get a whole lot out of it.
 
 If you encounter errors, ensure that the __FLASK\_APP__ and 
-__VECTORQ\_SETTINGS__ values are set. Also ensure that your data directory (see
+__VICTA\_SETTINGS__ values are set. Also ensure that your data directory (see
 the [#config-options](Config Options) section) exists before starting the app.
 
 ## Endpoints

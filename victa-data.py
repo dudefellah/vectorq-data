@@ -37,7 +37,7 @@ def _validate_contents(contents):
     return True
 
 app = flask.Flask(__name__)
-app.config.from_envvar("VECTORQ_SETTINGS")
+app.config.from_envvar("VICTA_SETTINGS")
 
 
 # Do some initialization checking before getting started
